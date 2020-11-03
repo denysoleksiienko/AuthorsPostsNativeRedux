@@ -4,8 +4,8 @@
 
 ```
 1. Copy repo
-2. npm i
-3. cd AuthorsPostsNativeRedux
+2. cd AuthorsPostsNativeRedux
+3. npm i
 4. npm run android
 ```
 
