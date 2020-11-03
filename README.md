@@ -5,7 +5,8 @@
 ```
 1. Copy repo
 2. npm i
-3. npm run android
+3. cd AuthorsPostsNativeRedux
+4. npm run android
 ```
 
 ## Tech stack
