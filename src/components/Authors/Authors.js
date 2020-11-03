@@ -10,7 +10,9 @@ export const Authors = ({ user, navigation, posts }) => {
       name: user.name,
     });
   };
-  // const postsLength = posts.filter((post) => post.userId === user.id);
+
+  const postsLength = posts.filter((post) => post.userId === user.id);
+
   return (
     <TouchableOpacity style={styles.container} onPress={handleMoveToPosts}>
       <Image source={require('../../assets/avatar.png')} />
@@ -18,7 +20,7 @@ export const Authors = ({ user, navigation, posts }) => {
         <Text style={styles.name}>{user.name}</Text>
         <Text style={styles.email}>{user.email}</Text>
       </View>
-      <Text style={styles.postsLength}>5 posts</Text>
+      <Text style={styles.postsLength}>{postsLength.length} posts</Text>
       <Image source={require('../../assets/vector.png')} />
     </TouchableOpacity>
   );

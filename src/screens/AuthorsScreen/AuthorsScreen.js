@@ -15,14 +15,20 @@ import { styles } from './AuthorsScreen[styles]';
 export const AuthorsScreen = ({
   navigation,
   authors,
+  posts,
   isLoading,
   initialUsersPage,
+  initialPostsPage,
 }) => {
   const [searchAuthors, setSearchAuthors] = React.useState([]);
   const [inputText, setInputText] = React.useState('');
 
   React.useEffect(() => {
     initialUsersPage();
+  }, []);
+
+  React.useEffect(() => {
+    initialPostsPage();
   }, []);
 
   const handleSearchInput = (text) => {
@@ -42,7 +48,7 @@ export const AuthorsScreen = ({
   };
 
   const renderItem = ({ item }) => (
-    <Authors user={item} navigation={navigation} />
+    <Authors user={item} navigation={navigation} posts={posts} />
   );
   const renderData = inputText === '' ? authors : searchAuthors;
 

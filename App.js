@@ -6,6 +6,7 @@ import { store } from './src/redux';
 
 import { Header } from './src/components/Header';
 import { AuthorsScreen } from './src/screens/AuthorsScreen';
+import { PostsScreen } from './src/screens/PostsScreen';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ export const App = () => {
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Authors" headerMode="none">
           <Stack.Screen name="Authors" component={AuthorsScreen} />
+          <Stack.Screen name="Posts" component={PostsScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
