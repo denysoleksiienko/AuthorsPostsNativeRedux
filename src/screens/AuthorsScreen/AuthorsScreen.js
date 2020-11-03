@@ -1,5 +1,11 @@
 import React from 'react';
-import { Text, SafeAreaView, FlatList } from 'react-native';
+import {
+  View,
+  ActivityIndicator,
+  Text,
+  SafeAreaView,
+  FlatList,
+} from 'react-native';
 
 import { Authors } from '../../components/Authors';
 import { Search } from '../../components/Search';
@@ -9,7 +15,7 @@ import { styles } from './AuthorsScreen[styles]';
 export const AuthorsScreen = ({
   navigation,
   authors,
-
+  isLoading,
   initialUsersPage,
 }) => {
   const [searchAuthors, setSearchAuthors] = React.useState([]);
@@ -40,7 +46,11 @@ export const AuthorsScreen = ({
   );
   const renderData = inputText === '' ? authors : searchAuthors;
 
-  return (
+  return isLoading ? (
+    <View style={[styles.container, styles.horizontal]}>
+      <ActivityIndicator size="large" color="#0000ff" />
+    </View>
+  ) : (
     <SafeAreaView style={styles.container}>
       <Text style={styles.authors}>Authors</Text>
       <Search onChangeText={handleSearchInput} />
