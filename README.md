@@ -32,16 +32,12 @@ https://jsonplaceholder.typicode.com/posts
 
 ## Author and Post Screens
 
----
-
 ![Authors](https://github.com/denysoleksiienko/AuthorsPostsNativeRedux/blob/main/screenshots/AuthorsScreen.JPG?raw=true 'Authors')
 ![Posts](https://github.com/denysoleksiienko/AuthorsPostsNativeRedux/blob/main/screenshots/PostsScreen.JPG?raw=true 'Posts')
 
 ---
 
 ## Filter by Name and Email / Title and Body
-
----
 
 ![filtername](https://github.com/denysoleksiienko/AuthorsPostsNativeRedux/blob/main/screenshots/FilterByNameEmail.JPG?raw=true 'filtername')
 ![filtertitle](https://github.com/denysoleksiienko/AuthorsPostsNativeRedux/blob/main/screenshots/FilterByTitleBody.JPG?raw=true 'filtertitle')
