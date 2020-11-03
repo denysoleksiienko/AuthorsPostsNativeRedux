@@ -12,7 +12,7 @@
 ## Tech stack
 
 ```
-1. React/React Native, React Navigation
+1. React/React Native, React Navigation, React Hooks
 2. Redux, redux-actions, redux-thunk
 3. Axios
 ```
