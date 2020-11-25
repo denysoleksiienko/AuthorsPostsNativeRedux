@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 
-import { styles } from './Authors[styles]';
+import { styles } from './Authors.module';
 
 export const Authors = ({ user, navigation, posts }) => {
   const handleMoveToPosts = () => {
