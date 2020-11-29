@@ -4,7 +4,7 @@ import { SafeAreaView, FlatList, Text } from 'react-native';
 import { Posts } from '../../components/Posts';
 import { Search } from '../../components/Search';
 
-import { styles } from './PostsScreen[styles]';
+import { styles } from './PostsScreen.module';
 
 export const PostsScreen = ({ route, posts }) => {
   const { id, name } = route.params;
