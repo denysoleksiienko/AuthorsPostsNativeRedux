@@ -10,7 +10,7 @@ import {
 import { Authors } from '../../components/Authors';
 import { Search } from '../../components/Search';
 
-import { styles } from './AuthorsScreen[styles]';
+import { styles } from './AuthorsScreen.module';
 
 export const AuthorsScreen = ({
   navigation,
